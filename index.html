@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaMask Connection and USDT Transfer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>MetaMask Connection and USDT Transfer</h1>
+  <div class="button-container">
+    <button id="connect">Connect MetaMask</button>
+    <button id="disconnect" style="display: none;">Disconnect MetaMask</button>
+  </div>
+  <div class="input-container">
+    <label for="usdtAmount">Amount of USDT to send: </label>
+    <input type="number" id="usdtAmount" name="usdtAmount" min="0" step="any" value="10">
+  </div>
+  <div class="button-container">
+    <button id="transfer" style="display: none;">Transfer USDT</button>
+  </div>
+  <p id="status">MetaMask not connected</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
